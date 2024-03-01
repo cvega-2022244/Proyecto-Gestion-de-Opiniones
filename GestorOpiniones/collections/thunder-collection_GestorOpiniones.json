@@ -1,0 +1,431 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorOpiniones",
+    "dateExported": "2024-02-29T21:30:59.177Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "19a1e851-df9d-4b22-a0e1-fdbb947cb5af",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-02-29T18:51:06.739Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e642f935-462a-4a35-9809-dda246c98eac",
+            "name": "publication",
+            "containerId": "",
+            "created": "2024-02-29T18:51:06.740Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "cf63d26b-8501-4401-9a29-29c366f91c32",
+            "name": "comment",
+            "containerId": "",
+            "created": "2024-02-29T18:51:06.741Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "33bc5085-3879-43d3-8d5e-3da79c8c9372",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "19a1e851-df9d-4b22-a0e1-fdbb947cb5af",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-29T18:51:06.739Z",
+            "modified": "2024-02-29T19:15:22.624Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Franco "
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Paiz "
+                    },
+                    {
+                        "name": "username",
+                        "value": "fpaiz"
+                    },
+                    {
+                        "name": "email",
+                        "value": "fpaiz@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "address",
+                        "value": "Villa Nueva, Guatemala."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7910de32-97e1-41c0-a412-ba328a54ada0",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "19a1e851-df9d-4b22-a0e1-fdbb947cb5af",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-29T18:51:06.740Z",
+            "modified": "2024-02-29T21:00:52.406Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "fpaiz2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "87654321"
+                    },
+                    {
+                        "name": "email",
+                        "value": "fpaiz2@gmail.com",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0bcfdbad-cab4-48ae-9da6-8cb950128183",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "19a1e851-df9d-4b22-a0e1-fdbb947cb5af",
+            "name": "update",
+            "url": "/user/update/65e0d22a7578a344e01ba7e3",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-29T18:51:06.741Z",
+            "modified": "2024-02-29T20:49:23.657Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gQWxlamFuZHJvIDIiLCJlbWFpbCI6ImZwYWl6MkBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5MjM5NzQzLCJleHAiOjE3MDkyNTA1NDN9._jUWYWXuXkeefNYQiiHSFt-4CPUv21mch1TEuSadHAM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "lastPassword",
+                        "value": "12345678",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "87654321",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "name",
+                        "value": "Franco Alejandro 2"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f58ce2f6-7673-40f4-9dc0-73251aca2e6a",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "e642f935-462a-4a35-9809-dda246c98eac",
+            "name": "createPost",
+            "url": "/publication/createPost",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-29T18:51:06.742Z",
+            "modified": "2024-02-29T18:52:09.525Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gMiIsImVtYWlsIjoiZnBhaXoyQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDkyMzI2OTEsImV4cCI6MTcwOTI0MzQ5MX0.sTpWbLoE96voDcO1TWTtoKh-MUpbRR5xGThvsryqGD0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "La IA destruirá el mundo2"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Tecnología "
+                    },
+                    {
+                        "name": "mainText",
+                        "value": "Estudios han demostrado que la IA no puede ser controlada más haya de su creación."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2e679400-a723-45f1-832d-d7b89fee5ad3",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "e642f935-462a-4a35-9809-dda246c98eac",
+            "name": "getPosts",
+            "url": "/publication/getPosts",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-29T18:51:06.743Z",
+            "modified": "2024-02-29T21:01:14.211Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gQWxlamFuZHJvIDIiLCJlbWFpbCI6ImZwYWl6MkBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5MjQwNDUyLCJleHAiOjE3MDkyNTEyNTJ9._J-5Gq5OJefs6t91Bt4ssJq_DWy7xlDIBXMatu3oXOI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "313714b9-058b-4add-9f3a-745505d8eb22",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "e642f935-462a-4a35-9809-dda246c98eac",
+            "name": "updatePost",
+            "url": "/publication/updatePost/65e0d2597578a344e01ba7e7",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-02-29T18:51:06.744Z",
+            "modified": "2024-02-29T21:06:33.495Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gQWxlamFuZHJvIDIiLCJlbWFpbCI6ImZwYWl6MkBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5MjQwNDUyLCJleHAiOjE3MDkyNTEyNTJ9._J-5Gq5OJefs6t91Bt4ssJq_DWy7xlDIBXMatu3oXOI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "Tecnología e informática."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f6391858-c66e-4f30-88cc-0cacb751bc78",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "e642f935-462a-4a35-9809-dda246c98eac",
+            "name": "deletePost",
+            "url": "/publication/deletePost/65df5169642556b97fb8b687",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-02-29T18:51:06.745Z",
+            "modified": "2024-02-29T18:51:06.745Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmNDBjZmQyMDJkNDAyZWMxZDFiY2UiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gMiIsImVtYWlsIjoiZnBhaXoyQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDkxNzk4OTUsImV4cCI6MTcwOTE5MDY5NX0.htz4QWxcpU_p1T_gh1qA0QcYw4MKc2jLAeo_fAx6YlM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1cc0ee08-0cad-45c6-a0c4-905d903bbd36",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "cf63d26b-8501-4401-9a29-29c366f91c32",
+            "name": "createComment",
+            "url": "/comment/createComment",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-29T18:51:06.747Z",
+            "modified": "2024-02-29T21:20:39.172Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gQWxlamFuZHJvIDIiLCJlbWFpbCI6ImZwYWl6MkBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5MjQwNDUyLCJleHAiOjE3MDkyNTEyNTJ9._J-5Gq5OJefs6t91Bt4ssJq_DWy7xlDIBXMatu3oXOI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Podemos manejar la informaci[on mejor."
+                    },
+                    {
+                        "name": "publication",
+                        "value": "65e0d2597578a344e01ba7e7"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "69ff5e1c-f20c-42f7-8321-6bf74fa96ada",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "cf63d26b-8501-4401-9a29-29c366f91c32",
+            "name": "test",
+            "url": "/comment/test",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-29T18:51:06.748Z",
+            "modified": "2024-02-29T18:51:06.748Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "508db15d-8d23-4c97-a0ec-c0b68998053e",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "cf63d26b-8501-4401-9a29-29c366f91c32",
+            "name": "getComments",
+            "url": "/comment/getComments",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-02-29T19:12:41.756Z",
+            "modified": "2024-02-29T21:07:19.558Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gQWxlamFuZHJvIDIiLCJlbWFpbCI6ImZwYWl6MkBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5MjQwNDUyLCJleHAiOjE3MDkyNTEyNTJ9._J-5Gq5OJefs6t91Bt4ssJq_DWy7xlDIBXMatu3oXOI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "31f0ec1e-386e-4ec8-8ee4-b66baebf55e0",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "cf63d26b-8501-4401-9a29-29c366f91c32",
+            "name": "getMyComments",
+            "url": "/comment/getMyComments",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-02-29T19:14:06.444Z",
+            "modified": "2024-02-29T19:14:30.101Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gMiIsImVtYWlsIjoiZnBhaXoyQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDkyMzI2OTEsImV4cCI6MTcwOTI0MzQ5MX0.sTpWbLoE96voDcO1TWTtoKh-MUpbRR5xGThvsryqGD0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ec38cf14-c27b-4acf-9d4d-07e06a8a8e4a",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "cf63d26b-8501-4401-9a29-29c366f91c32",
+            "name": "updateComment",
+            "url": "/comment/updateComment/65e0d6fa351ede2571da02f2",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-02-29T19:14:56.005Z",
+            "modified": "2024-02-29T19:24:05.573Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gMiIsImVtYWlsIjoiZnBhaXoyQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDkyMzQ2MzUsImV4cCI6MTcwOTI0NTQzNX0.MhZNlSPLRDkjtRXCQSnHVPvrAuAYT2-WiC5pAMqgrHw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Puede ser verdad si no la controlamos."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "da16feb0-bcf9-449c-8239-1af5ac233249",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "cf63d26b-8501-4401-9a29-29c366f91c32",
+            "name": "deleteComment",
+            "url": "/comment/deleteComment/65e0d6fa351ede2571da02f2",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-02-29T19:24:31.909Z",
+            "modified": "2024-02-29T19:28:18.395Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gMiIsImVtYWlsIjoiZnBhaXoyQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDkyMzQ4OTAsImV4cCI6MTcwOTI0NTY5MH0.u7rd1SRF1R7Cm_Oid6hTZkSg9LKKJ2c22nzqirsKwYY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bbcbe2e9-1b1d-4ffd-a9ca-4478598118d9",
+            "colId": "3cb68a71-1394-48ef-8a08-e3c6d3d0f8c3",
+            "containerId": "19a1e851-df9d-4b22-a0e1-fdbb947cb5af",
+            "name": "updatePassword",
+            "url": "/user/updatePassword/65e0d22a7578a344e01ba7e3",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2024-02-29T20:26:11.360Z",
+            "modified": "2024-02-29T20:51:40.812Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDIyYTc1NzhhMzQ0ZTAxYmE3ZTMiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28gQWxlamFuZHJvIDIiLCJlbWFpbCI6ImZwYWl6MkBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5MjM5NzQzLCJleHAiOjE3MDkyNTA1NDN9._jUWYWXuXkeefNYQiiHSFt-4CPUv21mch1TEuSadHAM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "lastPassword",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "password",
+                        "value": "87654321"
+                    },
+                    {
+                        "name": "name",
+                        "value": "Juan",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
